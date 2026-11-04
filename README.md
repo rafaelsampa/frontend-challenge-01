@@ -112,7 +112,7 @@ With more time I would try to search for a way to complete the challenge's requi
 
 ### JS fourth try
 
-The last thing IU was trying to do was "close a chosen question". After debugging I understood why closing it does not work. But I could not find a solution, yet.
+The last thing I was trying to do was "close a chosen question". After debugging I understood why closing it, does not work. But I could not find a solution, yet.
 
 ```js
 
