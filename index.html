@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<head>
+	<title> What are u looking at?</title>
+
+	<style>
+
+		.collapsible {
+			background-color:cyan;
+			width: 100%;
+			height: 50;
+			padding: 18px;
+		}
+		.content {
+			background-color: rgb(197, 103, 209);
+			padding: 18px;
+			display: none;
+		}
+
+	</style>
+</head>
+
+
+<body>
+
+	<div>
+
+		<!----Q1---->
+		<button class="collapsible" >What did I do my FIRST week at Liferay?</button>
+		<div class="content" >
+			<p>My Onbarding, my first daily with the team during the week, create my study/recap document in clofluence, etc.</p>
+		</div>
+
+		<!----Q2---->
+		<button type="button" class="collapsible">What did I do my SECOND week at Liferay?</button>
+		<p class="content">I starded the basic training path and typing pratice</p>
+
+
+		<!----Q3---->
+		<button type="button" class="collapsible">My favorite Clube Social</button>
+		<div class="content">
+			<p>Pitt stop, the chocolate flavour</p>
+		</div>
+
+		<!----Q4---->
+		<button type="button" class="collapsible">Will I be backend or frontend?</button>
+		<div class="content">
+			<p>Just God knows</p>
+		</div>
+
+		<!----Q5---->
+		<button type="button" class="collapsible">Today I have an exam, what do I need to recap?</button>
+		<div class="content">
+			<p>Arquitetura de Monociclo e Multiciclo</p>
+		</div>
+
+		<!----Q6---->
+		<button type="button" class="collapsible">Is this challange easy?</button>
+		<div class="content" >
+			<p>To be continued...</p>
+		</div>
+
+
+	</div>
+
+
+
+	<script>
+
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+		const flagOpen = false;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				
+				const aux = i;
+				
+
+				for(j = 0; j < coll.length; j++){
+					coll[j].nextElementSibling.style.display = "none";
+				}
+
+				// tudo em funcao do button i clicado no momento
+				if((this.nextElementSibling.style.display === "block") || flagOpen === true){
+					this.nextElementSibling.style.display = "none";
+					flagOpen = false;
+				}else {
+					this.nextElementSibling.style.display = "block";
+					flagOpen = true;
+				}
+
+			});
+		}
+
+
+	</script>
+
+
+</body>
+	
+</html> 
